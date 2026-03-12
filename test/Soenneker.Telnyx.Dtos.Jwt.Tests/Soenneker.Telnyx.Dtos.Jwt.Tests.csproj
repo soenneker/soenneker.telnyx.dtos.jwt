@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Telnyx.Dtos.Jwt.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Telnyx.Dtos.Jwt\Soenneker.Telnyx.Dtos.Jwt.csproj" />
     </ItemGroup>
 
     <ItemGroup>
