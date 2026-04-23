@@ -1,11 +1,10 @@
-﻿using Soenneker.Tests.Unit;
-using Xunit;
+using Soenneker.Tests.Unit;
 
 namespace Soenneker.Telnyx.Dtos.Jwt.Tests;
 
 public sealed class TelnyxJwtTests : UnitTest
 {
-    [Fact]
+    [Test]
     public void Default()
     {
 
