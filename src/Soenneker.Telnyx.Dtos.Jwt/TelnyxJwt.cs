@@ -3,60 +3,60 @@
 namespace Soenneker.Telnyx.Dtos.Jwt;
 
 /// <summary>
-/// A Telnyx JWT payload in DTO form
+/// Represents the claims in a decoded Telnyx JWT payload.
 /// </summary>
 public sealed class TelnyxJwt
 {
     /// <summary>
-    /// Gets or sets aud.
+    /// Gets or sets the audience claim.
     /// </summary>
     [JsonPropertyName("aud")]
     public string Aud { get; set; } = null!;
 
     /// <summary>
-    /// Gets or sets exp.
+    /// Gets or sets the expiration time as Unix seconds.
     /// </summary>
     [JsonPropertyName("exp")]
     public long Exp { get; set; }
 
     /// <summary>
-    /// Gets or sets iat.
+    /// Gets or sets the issued-at time as Unix seconds.
     /// </summary>
     [JsonPropertyName("iat")]
     public long Iat { get; set; }
 
     /// <summary>
-    /// Gets or sets iss.
+    /// Gets or sets the issuer claim.
     /// </summary>
     [JsonPropertyName("iss")]
     public string Iss { get; set; } = null!;
 
     /// <summary>
-    /// Gets or sets jti.
+    /// Gets or sets the token identifier.
     /// </summary>
     [JsonPropertyName("jti")]
     public string Jti { get; set; } = null!;
 
     /// <summary>
-    /// Gets or sets nbf.
+    /// Gets or sets the not-before time as Unix seconds.
     /// </summary>
     [JsonPropertyName("nbf")]
     public long Nbf { get; set; }
 
     /// <summary>
-    /// Gets or sets sub.
+    /// Gets or sets the subject claim.
     /// </summary>
     [JsonPropertyName("sub")]
     public string Sub { get; set; } = null!;
 
     /// <summary>
-    /// Gets or sets tel token.
+    /// Gets or sets the Telnyx-specific token claim.
     /// </summary>
     [JsonPropertyName("tel_token")]
     public string TelToken { get; set; } = null!;
 
     /// <summary>
-    /// Gets or sets typ.
+    /// Gets or sets the token type claim.
     /// </summary>
     [JsonPropertyName("typ")]
     public string Typ { get; set; } = null!;
